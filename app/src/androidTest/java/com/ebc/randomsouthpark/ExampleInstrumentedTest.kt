@@ -1,4 +1,4 @@
-package com.ebc.randomsouth
+package com.ebc.randomsouthpark
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

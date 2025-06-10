@@ -1,4 +1,4 @@
-package com.ebc.randomsouth.ui.components
+package com.ebc.randomsouthpark.ui.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -33,12 +33,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.AsyncImage
-import com.ebc.randomsouth.R
-import com.ebc.randomsouth.models.EpisodeData
-import com.ebc.randomsouth.ui.theme.AppTypography
-import com.ebc.randomsouth.ui.theme.Grey40
-import com.ebc.randomsouth.ui.theme.Red10
-import com.ebc.randomsouth.viewmodels.EpisodeViewModel
+import com.ebc.randomsouthpark.R
+import com.ebc.randomsouthpark.models.EpisodeData
+import com.ebc.randomsouthpark.ui.theme.AppTypography
+import com.ebc.randomsouthpark.ui.theme.Grey40
+import com.ebc.randomsouthpark.ui.theme.Red10
+import com.ebc.randomsouthpark.viewmodels.EpisodeViewModel
 
 
 @Composable

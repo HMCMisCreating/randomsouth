@@ -1,11 +1,11 @@
-package com.ebc.randomsouth.viewmodels
+package com.ebc.randomsouthpark.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.ebc.randomsouth.data.EpisodeRepository
-import com.ebc.randomsouth.models.EpisodeData
+import com.ebc.randomsouthpark.data.EpisodeRepository
+import com.ebc.randomsouthpark.models.EpisodeData
 import kotlinx.coroutines.launch
 
 

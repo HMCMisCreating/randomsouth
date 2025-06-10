@@ -1,4 +1,4 @@
-package com.ebc.randomsouth.ui.theme
+package com.ebc.randomsouthpark.ui.theme
 import androidx.compose.ui.graphics.Color
 
 val Magenta = Color(0xFFD000C9)

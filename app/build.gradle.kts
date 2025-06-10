@@ -8,11 +8,11 @@ plugins {
     kotlin("plugin.serialization") version "2.1.21"
 }
 android {
-    namespace = "com.ebc.randomsouth"
+    namespace = "com.ebc.randomsouthpark"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.ebc.randomsouth"
+        applicationId = "com.ebc.randomsouthpark"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

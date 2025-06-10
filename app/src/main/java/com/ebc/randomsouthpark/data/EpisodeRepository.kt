@@ -1,7 +1,7 @@
-package com.ebc.randomsouth.data
+package com.ebc.randomsouthpark.data
 
-import com.ebc.randomsouth.controller.RetrofitClient
-import com.ebc.randomsouth.models.EpisodeData
+import com.ebc.randomsouthpark.controller.RetrofitClient
+import com.ebc.randomsouthpark.models.EpisodeData
 
 
 

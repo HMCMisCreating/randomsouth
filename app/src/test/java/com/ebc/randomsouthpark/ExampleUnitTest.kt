@@ -1,4 +1,4 @@
-package com.ebc.randomsouth
+package com.ebc.randomsouthpark
 
 import org.junit.Test
 

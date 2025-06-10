@@ -1,4 +1,4 @@
-package com.ebc.randomsouth.models
+package com.ebc.randomsouthpark.models
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

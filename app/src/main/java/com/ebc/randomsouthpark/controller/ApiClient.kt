@@ -1,4 +1,4 @@
-package com.ebc.randomsouth.controller
+package com.ebc.randomsouthpark.controller
 
 
 import com.squareup.moshi.Moshi

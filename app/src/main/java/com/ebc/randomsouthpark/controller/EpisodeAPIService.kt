@@ -1,7 +1,7 @@
-package com.ebc.randomsouth.controller
+package com.ebc.randomsouthpark.controller
 
 
-import com.ebc.randomsouth.models.ApiResponse
+import com.ebc.randomsouthpark.models.ApiResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
