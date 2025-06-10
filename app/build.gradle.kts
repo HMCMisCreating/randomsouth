@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 
+    id("kotlin-kapt")
+
     kotlin("plugin.serialization") version "2.1.21"
 }
 android {
@@ -15,7 +17,7 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-        vectorDrawables.useSupportLibrary = true
+        //vectorDrawables.useSupportLibrary = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -53,6 +55,8 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -64,6 +68,8 @@ dependencies {
     implementation ("com.squareup.retrofit2:converter-gson:3.0.0")
     // Coil
     implementation (libs.coil)
+    implementation(libs.coil.compose)
+
 
     implementation("androidx.activity:activity-ktx:1.7.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:${rootProject.extra["lifecycle_version"]}")
@@ -73,7 +79,24 @@ dependencies {
     implementation("io.coil-kt:coil-compose:2.4.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
 
-    implementation (libs.appcompat.v7)
+    // Compose
+    implementation ("androidx.activity:activity-compose:1.8.2")
+    implementation ("androidx.compose.ui:ui:1.6.3")
+    implementation ("androidx.compose.material:material:1.6.3")
+    implementation ("androidx.compose.ui:ui-tooling-preview:1.6.3")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+
+    //implementation (libs.appcompat.v7)
     implementation (libs.androidx.ui.text.google.fonts)
+
+    // Replace Retrofit Gson converter with Moshi
+    implementation ("com.squareup.retrofit2:converter-moshi:2.9.0")
+    implementation ("com.squareup.moshi:moshi-kotlin:1.15.0")
+    implementation ("com.squareup.moshi:moshi-adapters:1.15.0")
+    kapt ("com.squareup.moshi:moshi-kotlin-codegen:1.15.0")
+
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.3") // for logging
+    implementation ("androidx.compose.runtime:runtime-livedata:1.6.3")
+
 
 }

@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    //Personalized
+    <color name="pink_100">#FFD000C9</color>
+    <color name="yellow_100">#FFE062</color>
+    <color name="red_100">#E64A4A</color>
+    <color name="yorange_100">#FDA400</color>
+    <color name="gray_100">#D9D9D9</color>
+    <color name="peach_100">#FFDDB5</color>
+    <color name="bluesoft_100">#52C8FF</color>
+    <color name="blue_100">#007FFD</color>
+    <color name="green_100">#00FD54</color>
+    <color name="orangeK_100">#F27621</color>
+    <color name="brownK_100">#7F3820</color>
+
+    //Default
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>

@@ -1,19 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:textAlignment="center">
 
-    <TextView
-        android:id="@+id/miTxt"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/homemainbg"
+        android:contentDescription="Background"
 
-    <Button
-        android:id="@+id/button"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="buttonPressed"
-        android:text="Button" />
-</LinearLayout>
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/titleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#FFEB3B"
+            android:gravity="center|center_vertical"
+            android:text="GENERATE NEW RANDOM EPISODE"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:cornerRadius="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageFilterView"
+            app:layout_constraintEnd_toEndOf="@+id/episodeName"
+            app:layout_constraintStart_toStartOf="@+id/episodeName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imageFilterView"
+            android:layout_width="246dp"
+            android:layout_height="174dp"
+            android:layout_marginStart="82dp"
+            android:layout_marginEnd="83dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/episodeName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleBtn"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/episodeName"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="32dp"
+            android:background="#BEC4DA"
+            android:text=" EPISODE NAME"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/seasonNumberInfo"
+            app:layout_constraintEnd_toEndOf="@+id/seasonNumberInfo"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/seasonNumberInfo"
+            app:layout_constraintTop_toBottomOf="@+id/imageFilterView" />
+
+        <TextView
+            android:id="@+id/seasonNumberInfo"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#BEC4DA"
+            android:text=" SEASON EPISODE #"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:cornerRadius="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/plotTxt"
+            app:layout_constraintStart_toStartOf="@+id/plotTxt"
+            app:layout_constraintTop_toBottomOf="@+id/episodeName" />
+
+        <TextView
+            android:id="@+id/plotTxt"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="38dp"
+            android:background="#BEC4DA"
+            android:text="PLOT LOREM IPSUM BLABKABKA LOREM IPSUM BLABKABK LOREM IPSUM BLABKABK LOREM IPSUM BLABKABK"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:cornerRadius="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/generateBtn"
+            app:layout_constraintTop_toBottomOf="@+id/seasonNumberInfo"
+            tools:layout_editor_absoluteX="81dp" />
+
+
+        <Button
+            android:id="@+id/generateBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="43dp"
+            android:text="GENERATE"
+            android:textSize="12sp"
+            android:gravity="center|center_vertical"
+            android:textStyle="bold"
+            android:background = "@drawable/roundedbutton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plotTxt"
+            tools:layout_editor_absoluteX="155dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
